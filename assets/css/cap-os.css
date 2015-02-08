@@ -1,0 +1,227 @@
+/* 
+==========================
+CAP OS MINI STYLE GUIDE
+==========================
+
+==========================
+BRAND COLORS
+==========================
+
+brand black:
+RGBA: 19,3,3,1
+HEX: #130303
+
+brand warm gray:
+RGBA: 214,214,204,1
+HEX: #d6d6cc
+
+brand warm gray dark:
+RGBA: 218,218,210,1
+HEX: #dadad2
+
+brand white:
+RGBA: 249,249,244,1
+HEX: #f9f9f4
+
+
+==========================
+LEARN-CONNECT-ACT
+==========================
+ COLORS:
+ 
+Learn (blue):
+RGBA: 70,137,155,1
+HEX: #46899b
+
+Connect (orange):
+RGBA: 223,133,56,1
+HEX: #df8538
+
+Act (green):
+RGBA: 56,146,62,1
+HEX: #38923e
+
+
+==========================
+BORDER STYLES
+==========================
+
+hairline: 1px  solid color:#130303 @ 10% or rgba 19,3,3,0.1
+thin: 1px solid color:#130303 @ 15% or rgba 19,3,3,0.15
+
+*/
+/*
+ COLORS
+================================*/
+/* FONTS  
+====================================================*/
+/* DINCondensedBold  =====================================*/
+@font-face {
+  font-family: 'DINCondensedBold';
+  src: url("dincondensedbold.eot");
+  src: url("dincondensedbold.eot") format("embedded-opentype"), url("dincondensedbold.woff2") format("woff2"), url("dincondensedbold.woff") format("woff"), url("dincondensedbold.ttf") format("truetype"), url("dincondensedbold.svg#DINCondensedBold") format("svg"); }
+.DINCondensedBold {
+  font-family: 'DINCondensedBold'; }
+
+/* FONT SIZES  
+====================================================*/
+h1.title-banner, h1.title-banner-sm, .title-banner {
+  font-size: 35px;
+  font-weight: 200;
+  margin-bottom: 20px; }
+
+h2.title-banner, h2.title-banner-sm {
+  font-size: 30px; }
+
+h3.title-banner, h3.title-banner-sm {
+  font-size: 25px; }
+
+h4.title-banner, h4.title-banner-sm {
+  font-size: 20px; }
+
+h5.title-banner, h5.title-banner-sm {
+  font-size: 15px; }
+
+/*
+ Header
+================================*/
+.head-box {
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 100px 15px 50px 15px;
+  text-align: center; }
+
+.head-box h1,
+.head-box h2,
+.head-box h3 {
+  padding: 0 0 4px 0;
+  margin: 0 0 8px 0; }
+
+.head-box {
+  background-color: transparent;
+  background-image: url("../vid/img/header-image.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.head-box h1 {
+  font-family: "DINCondensedBold" !important;
+  font-size: 4.8vmax;
+  /*font-size: 48px;*/
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 4.8vmax; }
+
+.head-box h1 small {
+  font-size: 7.5vmin;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 8.5vmin; }
+
+.head-box h1 .fa {
+  font-size: 7.5vmin;
+  margin-bottom: 15px;
+  font-size: 8.5vmin; }
+
+.head-box h2 {
+  font-size: 24px;
+  font-weight: 300; }
+
+.head-box h3 {
+  font-size: 18px;
+  font-weight: 300; }
+
+.head-box h1:empty, .head-box h2:empty, .head-box h3:empty {
+  display: none; }
+
+/*
+ Jumbo Search
+================================*/
+.jumbo-search {
+  width: 90%;
+  padding: 15px 30px;
+  margin: 0 auto; }
+
+.filterMenu {
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.filterMenu * div.row {
+  margin-left: 0px; }
+
+.jumbo-search .input-group input {
+  height: 50px;
+  font-size: 18px;
+  color: rgba(19, 3, 3, 0.78);
+  background-color: rgba(249, 249, 244, 0.6);
+  border-color: rgba(19, 3, 3, 0.1); }
+
+.jumbo-search .input-group input:hover {
+  box-shadow: 0px 1px 1px rgba(19, 3, 3, 0.075) inset, 0px 0px 8px rgba(19, 3, 3, 0.6);
+  background-color: #f9f9f4; }
+
+.jumbo-search .btn, .jumbo-search .btn-search {
+  height: 50px;
+  padding: 0; }
+
+.jumbo-search .btn, .jumbo-search .btn-search {
+  background-color: rgba(19, 3, 3, 0.1);
+  color: rgba(19, 3, 3, 0.6);
+  line-height: 50px;
+  border-radius: 6px;
+  border-color: rgba(19, 3, 3, 0.1); }
+
+.jumbo-search .btn:hover, .jumbo-search .btn-search:hover {
+  background-color: rgba(19, 3, 3, 0.75);
+  color: #f9f9f4; }
+
+.jumbo-search .btn-search {
+  padding: 0 25px; }
+
+.jumbo-search .dropdown-toggle {
+  height: calc(50px + 20px);
+  background-color: rgba(19, 3, 3, 0.9);
+  color: #f9f9f4;
+  width: 150px;
+  margin-bottom: -20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  -webkit-transition: ease-in-out;
+          transition: ease-in-out; }
+
+.jumbo-search .dropdown-toggle.collapsed:hover {
+  background-color: rgba(19, 3, 3, 0.75);
+  color: #f9f9f4; }
+
+.jumbo-search .dropdown-toggle.collapsed {
+  background-color: rgba(19, 3, 3, 0.1);
+  color: rgba(19, 3, 3, 0.6);
+  height: 50px;
+  margin-bottom: 0px;
+  border-bottom-left-radius: 6px;
+  border-color: rgba(19, 3, 3, 0.1);
+  border-bottom-size: 1px;
+  -webkit-transition: ease-in-out;
+          transition: ease-in-out; }
+
+.jumbo-search .form-control:focus {
+  border-color: rgba(19, 3, 3, 0.1);
+  box-shadow: 0px 1px 1px rgba(19, 3, 3, 0.075) inset, 0px 0px 8px rgba(19, 3, 3, 0.6);
+  background-color: #f9f9f4; }
+
+.filterMenu {
+  border: 1px solid rgba(19, 3, 3, 0.1);
+  background-color: rgba(19, 3, 3, 0.07);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px; }
+
+.indent {
+  margin-left: 20px;
+  display: inline-block; }
+
+/*# sourceMappingURL=cap-os.css.map */

@@ -1,0 +1,126 @@
+FILE ARCHITECTURE
+
+cap-os/ 
+| 
+|– base/ 
+|	|– base.scss       # calls all required base files
+|   |– _variables.scss       # variables
+|   |– _reset.scss       # Reset/normalize 
+|   |– _typography.scss  # Typography rules 
+|   |– _colors.scss  # set core colors and rules 
+|   ...                  # Etc… |		
+|
+|		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+|
+|		The base/ folder holds what we might call the boilerplate stuff for a project. 
+|		In there, you might find the reset (or Normalize.css, or whatever), typography, core colors, and, depending on the project, maybe some other files.
+|		This is where we are defining the baseline for the core theme
+|		
+|		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+| 
+|– components/ 
+|   |– compontents.scss       # calls all required compontents files
+|   |– _buttons.scss     # Buttons 
+|   |– _carousel.scss    # Carousel 
+|   |– _dropdown.scss    # Dropdown 
+|   |– _navigation.scss  # Navigation 
+|   ...                  # Etc… 
+|
+|		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+|
+|		For smaller components, there is the components/ folder (frequently called modules/). 
+|		While layout/ is kind of macro (defining the global wireframe), components/ is more micro. 
+|		It can contain all kinds of specific modules like a slider, a loader, a widget, or anything along those lines. 
+|		There are usually a lot of files in components/ since the site should be mostly composed of tiny modules.
+|
+|		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+|
+| 
+|– engine/ 
+|   |– engine.scss       # calls all required engine files
+|   |– _variables.scss   # Sass Variables 
+|   |– _functions.scss   # Sass Functions 
+|   |– _mixins.scss      # Sass Mixins 
+|   |– _helpers.scss     # Class & placeholders helpers 
+|   ...                  # Etc… 
+|
+|		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+|
+|		The engine/ folder (sometimes called utils/ or helpers) gathers all Sass tools and helpers we’ll use across the project. 
+|		Got a function? A mixin? Put it in there. This folder also contains a _variables.scss file (sometimes _config.scss) 
+|		which holds all global variables for the project (for typography, color schemes, and so on). This is where all the logic behind the design lives.
+|
+|		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+|
+| 
+|– layout/ 
+|   |– layout.scss       # calls all required layout files
+|   |– _header.scss      # Header 
+|   |– _footer.scss      # Footer 
+|   |– _sidebar.scss     # Sidebar 
+|   |– _forms.scss       # Forms 
+|   ...                  # Etc… 
+| 
+|		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+|
+|		The layout/ directory (sometimes called partials/) usually contains a number of files, each of them setting 
+|		some styles for the main sections of the layout (header, footer, and so on). 
+|		It also contains the _grid file which is the grid system used to build the layout.
+|
+|		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+|
+|
+|– pages/ 
+|   |– _home.scss        # Home specific styles 
+|   |– _contact.scss     # Contact specific styles 
+|   ...                  # Etc… 
+| 
+|		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+|
+|		Used for page-specific styles, files are named to the corespond to the page where used. Outputs to seperate CSS file for use where needed only.
+|
+|		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+|
+|
+|– themes/ 
+|   |– themes.scss       # calls all required theme files
+|   |– _cap.scss       # CAP OS core theme 
+|   |– _acquisition-gateway.scss       # Acquisition Gateway theme 
+|   |– _sow.scss       # SOW theme 
+|   ...                  # Etc… 
+| 
+|		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+|
+|		These are brand specific styles
+|
+|		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+|
+|
+|– libs/ 
+|   |– librarys.scss       # calls all required library files
+|   |– _bootstrap.scss   # Bootstrap 
+|   |– _jquery-ui.scss   # jQuery UI 
+|   ...                  # Etc… 
+|
+|		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+|
+|		And last but not least, the vendors/ folder containing all the CSS files from external
+|		libraries and frameworks – Bootstrap, jQueryUI, etc. Outputs to seperate CSS file, all librarys will be packaged into one CSS file for inclusions.
+|
+|		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+| 
+`– main.scss             # primary Sass file 
+
+LOAD ORDER:
+
+engine.scss
+base.scss
+librarys.scss (outputs to seperate CSS file: assets/libs/library.css)
+layout.scss
+themes.scss (outputs to seperate CSS file: assets/css/themes/"BRAND NAME".css)
+components
+pages.scss (outputs to seperate CSS file: assets/css/pages/"PAGE NAME".css)
+
+
+main.scss compiles to: assets/css/cap-os.css
+

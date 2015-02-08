@@ -1,0 +1,21 @@
+// TYPOGRAPHY
+
+/* FONTS  
+====================================================*/
+
+/* DINCondensedBold  =====================================*/
+@font-face {
+	font-family: 'DINCondensedBold';
+	src: url('dincondensedbold.eot');
+	src: url('dincondensedbold.eot') format('embedded-opentype'),  url('dincondensedbold.woff2') format('woff2'),  url('dincondensedbold.woff') format('woff'),  url('dincondensedbold.ttf') format('truetype'),  url('dincondensedbold.svg#DINCondensedBold') format('svg');
+}
+
+.DINCondensedBold {	font-family: 'DINCondensedBold';}
+
+/* FONT SIZES  
+====================================================*/
+h1.title-banner, h1.title-banner-sm, .title-banner { font-size:35px; font-weight:200; margin-bottom:20px;}
+h2.title-banner, h2.title-banner-sm { font-size:30px;}
+h3.title-banner, h3.title-banner-sm { font-size:25px;}
+h4.title-banner, h4.title-banner-sm { font-size:20px;}
+h5.title-banner, h5.title-banner-sm { font-size:15px;}

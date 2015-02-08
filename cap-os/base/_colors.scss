@@ -1,0 +1,93 @@
+// COLORS
+
+/* 
+==========================
+CAP OS MINI STYLE GUIDE
+==========================
+
+==========================
+BRAND COLORS
+==========================
+
+brand black:
+RGBA: 19,3,3,1
+HEX: #130303
+
+brand warm gray:
+RGBA: 214,214,204,1
+HEX: #d6d6cc
+
+brand warm gray dark:
+RGBA: 218,218,210,1
+HEX: #dadad2
+
+brand white:
+RGBA: 249,249,244,1
+HEX: #f9f9f4
+
+
+==========================
+LEARN-CONNECT-ACT
+==========================
+ COLORS:
+ 
+Learn (blue):
+RGBA: 70,137,155,1
+HEX: #46899b
+
+Connect (orange):
+RGBA: 223,133,56,1
+HEX: #df8538
+
+Act (green):
+RGBA: 56,146,62,1
+HEX: #38923e
+
+
+==========================
+BORDER STYLES
+==========================
+
+hairline: 1px  solid color:#130303 @ 10% or rgba 19,3,3,0.1
+thin: 1px solid color:#130303 @ 15% or rgba 19,3,3,0.15
+
+*/
+
+/*
+ COLORS
+================================*/
+
+// BRAND COLORS
+$brand-black: rgba(19,3,3,1);
+$brand-black-07p: rgba(19,3,3,0.07);
+$brand-black-10p: rgba(19,3,3,0.1);
+$brand-black-20p: rgba(19,3,3,0.2);
+$brand-black-30p: rgba(19,3,3,0.3);
+$brand-black-40p: rgba(19,3,3,0.4);
+$brand-black-50p: rgba(19,3,3,0.5);
+$brand-black-60p: rgba(19,3,3,0.6);
+$brand-black-70p: rgba(19,3,3,0.7);
+$brand-black-75p: rgba(19,3,3,0.75);
+$brand-black-80p: rgba(19,3,3,0.8);
+$brand-black-90p: rgba(19,3,3,0.9);
+
+
+$brand-warm-gray: rgba(214,214,204,1);
+$brand-warm-gray-dk: rgba(218,218,210,1);
+
+$brand-white: rgba(249,249,244,1);
+$brand-white-10p: rgba(249,249,244,0.1);
+$brand-white-30p: rgba(249,249,244,0.3);
+$brand-white-60p: rgba(249,249,244,0.6);
+
+$brand-learn: rgba(70,137,155,1);
+$brand-connect: rgba(223,133,56,1);
+$brand-act: rgba(56,146,62,1);
+
+
+// FONT COLORS 
+$text-brand-black: rgba(19,3,3,0.78);
+$text-brand-white: rgba(249,249,244,1);
+
+
+

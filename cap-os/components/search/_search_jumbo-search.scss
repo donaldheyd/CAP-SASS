@@ -1,0 +1,125 @@
+/*
+ Jumbo Search
+================================*/
+
+// settings
+
+$jumbo-search-height:50px;
+$jumbo-search-width:90%;
+$jumbo-search-border-color: #{$brand-black-10p};
+$jumbo-search-radius-size:6px;
+
+
+// LAYOUT =============================================================
+
+.jumbo-search { 
+	width:#{$jumbo-search-width}; 
+	padding:15px 30px; 
+	margin:0 auto;
+	
+}
+.filterMenu {
+	width: 100%;
+	display: block;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.filterMenu * div.row {
+	margin-left: 0px;
+}
+
+
+// MODULE =============================================================
+
+.jumbo-search  .input-group input {
+	height: $jumbo-search-height;
+	font-size: 18px;
+	color: #{$text-brand-black};
+	background-color: #{$brand-white-60p};
+	border-color: #{$jumbo-search-border-color};
+	
+}
+
+.jumbo-search  .input-group input:hover {
+	box-shadow: 0px 1px 1px rgba(19, 3, 3, 0.075) inset, 0px 0px 8px rgba(19, 3, 3, 0.6);
+	background-color: #{$brand-white};
+	}
+	
+.jumbo-search .btn{ 
+  	height: $jumbo-search-height; 
+	padding:0;
+	
+}
+
+.jumbo-search .btn { 
+	background-color: #{$brand-black-10p}; 
+	color:#{$brand-black-60p}; 
+	line-height:$jumbo-search-height; 
+	border-radius: #{$jumbo-search-radius-size}; 
+	border-color: #{$jumbo-search-border-color};
+}
+
+.jumbo-search .btn:hover { 
+	background-color: #{$brand-black-75p}; 
+	color:#{$brand-white};  
+}
+
+.jumbo-search .btn-search { 
+  	@extend .btn;
+	padding: 0 25px;
+}
+
+.jumbo-search .dropdown-toggle {
+	height: calc(#{$jumbo-search-height} + 20px);
+	background-color: #{$brand-black-90p}; 
+	color:#{$brand-white};
+	width: 150px;
+	margin-bottom:-20px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	transition: ease-in-out;
+
+}
+
+.jumbo-search .dropdown-toggle.collapsed:hover{ 
+	background-color: #{$brand-black-75p}; 
+	color:#{$brand-white};
+}
+
+.jumbo-search .dropdown-toggle.collapsed {
+	background-color: #{$brand-black-10p}; 
+	color:#{$brand-black-60p};
+	height: $jumbo-search-height;
+	margin-bottom: 0px;
+	border-bottom-left-radius: #{$jumbo-search-radius-size};
+	border-color: #{$jumbo-search-border-color};
+	border-bottom-size:1px;
+	transition: ease-in-out;
+	
+}
+
+// STATE =============================================================
+
+.jumbo-search .form-control:focus {
+    border-color: #{$jumbo-search-border-color};
+	box-shadow: 0px 1px 1px rgba(19, 3, 3, 0.075) inset, 0px 0px 8px rgba(19, 3, 3, 0.6);
+	background-color: #{$brand-white};
+}
+
+
+// THEME =============================================================
+
+.filterMenu {
+	border:1px solid #{$jumbo-search-border-color};
+	background-color: #{$brand-black-07p};
+	border-bottom-left-radius: #{$jumbo-search-radius-size};
+	border-bottom-right-radius: #{$jumbo-search-radius-size};
+	border-top-right-radius: #{$jumbo-search-radius-size};
+	
+}
+
+.indent {
+	margin-left: 20px;
+	display: inline-block;
+}
